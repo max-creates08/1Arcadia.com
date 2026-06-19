@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Property Manager | 1Arcadia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body class="admin-page">
+    <header class="admin-header">
+      <a class="brand" href="index.html"><span class="brand-mark">1</span><span>ARCADIA</span></a>
+      <span>Property manager</span>
+    </header>
+
+    <main class="admin-main">
+      <section class="admin-welcome">
+        <p class="kicker">Private manager area</p>
+        <h1>Keep availability<br /><em>up to date.</em></h1>
+        <p>Sign in, change the three property messages, and press Publish. That’s it.</p>
+        <div class="security-note"><span>✓</span><p>Your password is checked securely by the server and is never saved in this browser.</p></div>
+      </section>
+
+      <section class="admin-card">
+        <form id="login-form">
+          <span class="step-label">Step 1 of 2</span>
+          <h2>Manager sign in</h2>
+          <p>Enter the private password for 1Arcadia.</p>
+          <label>Password<input id="manager-password" type="password" autocomplete="current-password" required /></label>
+          <p class="admin-message" id="login-message" role="alert"></p>
+          <button class="admin-button" type="submit">Sign in <span>→</span></button>
+        </form>
+
+        <form id="availability-admin-form" hidden>
+          <div class="editor-top"><span class="step-label">Step 2 of 2</span><button type="button" id="sign-out">Sign out</button></div>
+          <h2>Today’s availability</h2>
+          <p>Use short, clear messages. Visitors see these exact words.</p>
+          <label><span>Almeria Court</span><small>4220 E Almeria Rd</small><input name="almeria" maxlength="60" required /></label>
+          <label><span>Courtyard Apartments</span><small>3451 N 37th St</small><input name="courtyard" maxlength="60" required /></label>
+          <label><span>Olive Tree</span><small>3125 N 37th St</small><input name="olive" maxlength="60" required /></label>
+          <p class="admin-message" id="publish-message" role="status"></p>
+          <button class="admin-button" type="submit">Publish to website <span>→</span></button>
+          <a class="preview-link" href="index.html#properties" target="_blank">Preview public website ↗</a>
+        </form>
+      </section>
+    </main>
+
+    <script src="admin.js"></script>
+  </body>
+</html>

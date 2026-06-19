@@ -1,0 +1,36 @@
+.admin-page { min-height: 100vh; background: var(--cream); }
+.admin-header { height: 84px; padding: 0 6vw; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); background: rgba(248,251,253,.92); }
+.admin-header > span { color: #6a8498; font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.admin-main { min-height: calc(100vh - 84px); padding: 8vh 8vw; display: grid; grid-template-columns: .9fr 1.1fr; gap: 10vw; align-items: center; }
+.admin-welcome h1 { font-size: clamp(50px, 6vw, 88px); }
+.admin-welcome > p:not(.kicker) { max-width: 470px; color: #5f798d; font-size: 16px; line-height: 1.7; }
+.security-note { max-width: 470px; display: flex; gap: 14px; align-items: flex-start; margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--line); }
+.security-note > span { flex: none; width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; color: white; background: var(--forest); }
+.security-note p { margin: 2px 0 0; color: #5f798d; font-size: 12px; line-height: 1.6; }
+.admin-card { background: white; box-shadow: 0 24px 70px rgba(8,47,77,.13); }
+.admin-card form { padding: 48px; }
+.admin-card h2 { margin: 15px 0 8px; font: 600 38px "Playfair Display", serif; }
+.admin-card form > p:not(.admin-message) { margin: 0 0 30px; color: #6d8496; font-size: 13px; line-height: 1.6; }
+.step-label { color: var(--orange); font-size: 9px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
+.admin-card label { display: grid; gap: 8px; margin: 20px 0; color: var(--ink); font-size: 12px; font-weight: 700; }
+.admin-card label small { color: #7a91a2; font-weight: 400; }
+.admin-card input { width: 100%; border: 1px solid #bdd0dc; padding: 15px; color: var(--ink); background: var(--paper); outline: none; }
+.admin-card input:focus { border-color: var(--orange); box-shadow: 0 0 0 3px rgba(44,135,187,.12); }
+.admin-button { width: 100%; min-height: 54px; display: flex; align-items: center; justify-content: space-between; border: 0; padding: 0 20px; color: white; background: var(--forest); font-weight: 700; cursor: pointer; }
+.admin-button:disabled { opacity: .6; cursor: wait; }
+.admin-message { min-height: 20px; margin: 12px 0 !important; color: #b23b32; font-size: 12px; }
+.admin-message.success { color: #13744b; }
+.editor-top { display: flex; align-items: center; justify-content: space-between; }
+.editor-top button { border: 0; border-bottom: 1px solid var(--ink); padding: 0 0 3px; background: transparent; font-size: 11px; cursor: pointer; }
+.preview-link { display: block; width: max-content; margin: 20px auto 0; color: var(--forest); border-bottom: 1px solid currentColor; font-size: 11px; font-weight: 700; }
+
+@media (max-width: 850px) {
+  .admin-main { grid-template-columns: 1fr; padding: 60px 5vw; gap: 50px; }
+}
+
+@media (max-width: 520px) {
+  .admin-header { padding: 0 5vw; }
+  .admin-header > span { display: none; }
+  .admin-main { padding-top: 45px; }
+  .admin-card form { padding: 30px 20px; }
+}

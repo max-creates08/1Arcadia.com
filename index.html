@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Discover welcoming rental homes in Phoenix, Arizona with 1Arcadia." />
+    <title>1Arcadia | Phoenix Rentals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="1Arcadia home">
+        <span class="brand-mark">1</span>
+        <span>ARCADIA</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span>
+        <span class="sr-only">Open navigation</span>
+      </button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="#properties">Properties</a>
+        <a class="nav-link" href="#info">Info</a>
+        <a class="nav-link apply-link" href="#apply">Apply for property <span>↗</span></a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-orb orb-one"></div>
+        <div class="hero-orb orb-two"></div>
+        <div class="hero-content reveal">
+          <p class="eyebrow"><span></span> Rental living in Phoenix, Arizona</p>
+          <h1 id="hero-title">Find your place<br />to <em>feel at home.</em></h1>
+          <p class="hero-copy">Thoughtfully managed homes, simple applications, and a local team that treats where you live like it matters.</p>
+          <form class="home-finder" id="home-finder">
+            <label><span>Community</span><select id="finder-property"><option value="">Any property</option><option>Almeria Court</option><option>Courtyard Apartments</option><option>Olive Tree</option></select></label>
+            <label><span>Move-in</span><input type="date" id="finder-date" /></label>
+            <button type="submit">Find a home <span>→</span></button>
+          </form>
+          <a class="text-link hero-info-link" href="#info">Why 1Arcadia <span>→</span></a>
+        </div>
+        <div class="hero-art reveal" aria-hidden="true">
+          <div class="sun"></div>
+          <div class="mountain mountain-back"></div>
+          <div class="mountain mountain-front"></div>
+          <div class="building building-one"><i></i><i></i><i></i><i></i></div>
+          <div class="building building-two"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="palm"><b></b><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="art-caption"><span>33.45° N</span><span>112.07° W</span></div>
+        </div>
+        <div class="scroll-note">Scroll to discover <span>↓</span></div>
+      </section>
+
+      <section class="resident-strip" aria-label="Resident experience">
+        <div class="resident-intro"><span>Resident-first management</span><strong>Live with ease.</strong></div>
+        <div><b>01</b><p><strong>Simple applications</strong><span>Clear requirements and a direct path to your next home.</span></p></div>
+        <div><b>02</b><p><strong>Responsive support</strong><span>Local management when questions or needs come up.</span></p></div>
+        <div><b>03</b><p><strong>Transparent availability</strong><span>Current rental information, clearly displayed.</span></p></div>
+      </section>
+
+      <section class="properties section" id="properties" aria-labelledby="properties-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="kicker">Our communities</p>
+            <h2 id="properties-title">Three places.<br /><em>One standard of care.</em></h2>
+          </div>
+          <p>Explore our Phoenix rental communities, each with its own character and the same commitment to comfortable living.</p>
+        </div>
+
+        <div class="property-grid">
+          <article class="property-card reveal" data-card-property="Almeria Court">
+            <div class="property-visual almeria">
+              <span class="availability" data-availability="almeria">1 unit · Aug 1 · $1,495/mo</span>
+              <div class="visual-building"><i></i><i></i><i></i><i></i></div>
+              <span class="card-number">01</span>
+            </div>
+            <div class="property-body">
+              <div><p>4220 E Almeria Rd · 2 bd · 1.5 ba · 900 sq ft</p><h3>Almeria Court</h3><a class="listing-source" href="https://www.zillow.com/apartments/phoenix-az/almeria-court/5Xky3Z/" target="_blank" rel="noopener">View Zillow listing ↗</a></div>
+              <button class="circle-button property-select" type="button" data-property="Almeria Court" aria-label="Apply for Almeria Court">↗</button>
+            </div>
+          </article>
+
+          <article class="property-card featured reveal" data-card-property="Courtyard Apartments">
+            <div class="property-visual courtyard">
+              <span class="availability" data-availability="courtyard">No active rental listed</span>
+              <div class="courtyard-building left"><i></i><i></i><i></i></div>
+              <div class="courtyard-building right"><i></i><i></i><i></i></div>
+              <div class="pool"></div>
+              <span class="card-number">02</span>
+            </div>
+            <div class="property-body">
+              <div><p>3451 N 37th St · Phoenix, AZ 85018</p><h3>Courtyard Apartments</h3><a class="listing-source" href="https://www.zillow.com/b/3451-n-37th-st-phoenix-az-5YWzZ8/" target="_blank" rel="noopener">View Zillow building page ↗</a></div>
+              <button class="circle-button property-select" type="button" data-property="Courtyard Apartments" aria-label="Apply for Courtyard Apartments">↗</button>
+            </div>
+          </article>
+
+          <article class="property-card reveal" data-card-property="Olive Tree">
+            <div class="property-visual olive">
+              <span class="availability" data-availability="olive">No active rental listed</span>
+              <div class="olive-tree"><b></b><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="visual-building"><i></i><i></i><i></i><i></i></div>
+              <span class="card-number">03</span>
+            </div>
+            <div class="property-body">
+              <div><p>3125 N 37th St · Phoenix, AZ 85018</p><h3>Olive Tree</h3><a class="listing-source" href="https://www.zillow.com/b/3125-n-37th-st-phoenix-az-5XqsRk/" target="_blank" rel="noopener">View Zillow building page ↗</a></div>
+              <button class="circle-button property-select" type="button" data-property="Olive Tree" aria-label="Apply for Olive Tree">↗</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="info section" id="info" aria-labelledby="info-title">
+        <div class="info-panel reveal">
+          <div class="info-intro">
+            <p class="kicker light">The 1Arcadia difference</p>
+            <h2 id="info-title">Renting should feel<br /><em>refreshingly simple.</em></h2>
+            <p>We make it easier to find a home, understand what comes next, and get help when you need it.</p>
+          </div>
+          <div class="benefit-list">
+            <article><span>01</span><div><h3>Responsive management</h3><p>Clear communication from inquiry through move-in and beyond.</p></div></article>
+            <article><span>02</span><div><h3>Simple application</h3><p>A straightforward process with requirements explained up front.</p></div></article>
+            <article><span>03</span><div><h3>Local Phoenix focus</h3><p>Communities selected and cared for with desert living in mind.</p></div></article>
+            <article class="founder-note"><span>VR</span><div><h3>Led by Vladimir Rabinovich</h3><p>Founder and property manager of 1Arcadia, committed to attentive local stewardship.</p></div></article>
+          </div>
+        </div>
+        <div class="criteria reveal">
+          <p class="kicker">Before you apply</p>
+          <h3>Know the basics.</h3>
+          <div class="criteria-grid">
+            <div><strong>600+</strong><span>Minimum credit score</span></div>
+            <div><strong>18+</strong><span>Applicant age</span></div>
+            <div><strong>ID</strong><span>Valid identification</span></div>
+            <div><strong>Income</strong><span>Verification required</span></div>
+          </div>
+          <p class="fine-print">Meeting the minimum criteria does not guarantee approval. Applications may be subject to identity, income, rental-history, credit, and background screening in accordance with applicable fair-housing laws.</p>
+        </div>
+      </section>
+
+      <section class="apply section" id="apply" aria-labelledby="apply-title">
+        <div class="apply-copy reveal">
+          <p class="kicker">Start your application</p>
+          <h2 id="apply-title">Ready for your<br /><em>next address?</em></h2>
+          <p>Tell us a little about yourself. This first step takes only a few minutes and helps our team follow up with the right information.</p>
+          <div class="privacy-note"><span>✓</span><p><strong>Your privacy matters.</strong><br />Please do not enter a Social Security number or banking information in this form.</p></div>
+        </div>
+
+        <form class="application-form reveal" id="application-form" novalidate>
+          <div class="form-progress"><span>Rental inquiry</span><span>Required fields *</span></div>
+          <div class="form-row">
+            <label>First name *<input type="text" name="firstName" autocomplete="given-name" required /></label>
+            <label>Last name *<input type="text" name="lastName" autocomplete="family-name" required /></label>
+          </div>
+          <div class="form-row">
+            <label>Email address *<input type="email" name="email" autocomplete="email" required /></label>
+            <label>Phone number *<input type="tel" name="phone" autocomplete="tel" required /></label>
+          </div>
+          <label>Property of interest *
+            <select name="property" id="property-select" required>
+              <option value="">Select a property</option>
+              <option>Almeria Court</option>
+              <option>Courtyard Apartments</option>
+              <option>Olive Tree</option>
+            </select>
+          </label>
+          <div class="form-row">
+            <label>Desired move-in date *<input type="date" name="moveIn" required /></label>
+            <label>Number of occupants *<input type="number" name="occupants" min="1" max="20" required /></label>
+          </div>
+          <div class="form-row">
+            <label>Approx. monthly household income *<input type="number" name="income" min="0" step="100" placeholder="$" required /></label>
+            <label>Approx. credit score *<input type="number" name="creditScore" id="credit-score" min="600" max="850" placeholder="600 minimum" required /><small id="credit-help">A score of 600 or higher is required.</small></label>
+          </div>
+          <label>Current rental situation
+            <select name="rentalSituation">
+              <option value="">Select an option</option>
+              <option>Currently renting</option>
+              <option>Own my current home</option>
+              <option>Living with family or friends</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label>Anything else we should know?<textarea name="message" rows="3" placeholder="Pets, accessibility needs, questions, or other details"></textarea></label>
+          <label class="checkbox"><input type="checkbox" name="consent" required /><span>I confirm the information above is accurate and consent to being contacted about this rental inquiry. *</span></label>
+          <div class="form-error" id="form-error" role="alert"></div>
+          <button class="button submit-button" type="submit">Submit rental inquiry <span>→</span></button>
+          <p class="form-disclaimer">This is an initial inquiry, not a lease application or guarantee of housing.</p>
+        </form>
+
+        <div class="success-card" id="success-card" hidden>
+          <span>✓</span><h3>Thanks for reaching out.</h3><p>Your rental inquiry is ready. A 1Arcadia team member can follow up with availability and next steps.</p><button type="button" id="reset-form">Send another inquiry</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="#top"><span class="brand-mark">1</span><span>ARCADIA</span></a>
+      <p>Comfortable living, rooted in Phoenix.</p>
+      <div><a href="#properties">Properties</a><a href="#info">Info</a><a href="#apply">Apply</a></div>
+      <small>© <span id="year"></span> 1Arcadia. Created and managed by Vladimir Rabinovich. <a class="manager-link" href="admin.html">Property manager</a></small>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
